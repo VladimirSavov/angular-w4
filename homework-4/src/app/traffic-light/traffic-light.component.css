@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.btn-cross {
+    padding: 0.5rem 1rem;
+    background-color: #898585;
+    border: 1px solid #434242;
+    border-radius: 5px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.btn-cross:disabled {
+    background-color: #38abd5;
+    cursor: not-allowed;
+}
+
+.btn-cross:hover {
+    background-color: #38abd5;
+}
+
+.container.column {
+    flex-direction: column;
+}
+
+.container.row {
+    flex-direction: row;
+}
+
+.container.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.container.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.traffic-light {
+    display: flex;
+    background-color: #2e2c2c;
+    justify-content: space-between;
+    padding: .4rem;
+    gap: 1rem;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.red,
+.yellow,
+.green {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #d20909;
+}
+
+.red.active {
+    background-color: #ff0000;
+    box-shadow: 0 0 10px 5px #ff0000;
+}
+
+.yellow {
+    background-color: #eaea0d;
+}
+
+.yellow.active {
+    background-color: #ffff00;
+    box-shadow: 0 0 10px 5px #ffff00;
+}
+
+.green {
+    background-color: #008500;
+}
+
+.green.active {
+    background-color: #00ff00;
+    box-shadow: 0 0 10px 5px #02fa02;
+}

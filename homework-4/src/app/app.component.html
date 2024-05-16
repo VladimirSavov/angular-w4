@@ -1,0 +1,33 @@
+<div class="traffic-light-container">
+  <app-traffic-light 
+      [isHorizontal]="true" 
+      [color]="horizontalColor" 
+      [additional]="'row'">
+  </app-traffic-light>
+
+  <div class="horizontal-container">
+      <div class="vertical-container">
+          <app-traffic-light
+              [isHorizontal]="false"
+              [color]="verticalColor"
+              [additional]="'column'"
+          ></app-traffic-light>
+      </div>
+      <div class="btn-container">
+          <button class="btn" [disabled]="isAccident || isButtonDisabled" (click)="processAccident()">Авария</button>
+      </div>
+      <div class="vertical-container">
+          <app-traffic-light
+              [isHorizontal]="false"
+              [color]="verticalColor"
+              [additional]="'column-reverse'"
+          ></app-traffic-light>
+      </div>
+  </div>
+
+  <app-traffic-light 
+      [isHorizontal]="true" 
+      [color]="horizontalColor" 
+      [additional]="'row'">
+  </app-traffic-light> 
+</div>
